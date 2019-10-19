@@ -27,6 +27,8 @@ public class IntStreamExample {
         };
         List<Integer> ints = IntStream.generate(intSupplier).limit(10).boxed().collect(Collectors.toList());
         ints.stream().forEach(System.out::println);
+
+        IntStream intStream = IntStream.empty();
     }
 }
 
